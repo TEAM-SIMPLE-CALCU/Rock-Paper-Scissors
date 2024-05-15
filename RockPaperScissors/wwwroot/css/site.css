@@ -42,7 +42,7 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ced4da;
+    border: 1px solid #5021eb;
     border-radius: 5px;
 }
 
@@ -60,11 +60,11 @@ body {
 }
 
     .btn:hover {
-        background-color: #bf42f5;
+        background-color:#aa60d1;
     }
 
     .btn:active {
-        background-color: #0056b3;
+        background-color: #5137d4;
         box-shadow: none;
     }
 
