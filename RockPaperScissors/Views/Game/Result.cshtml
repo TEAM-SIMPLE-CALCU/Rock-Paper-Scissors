@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Game Result";
+}
+
+<h2>Game Result</h2>
+
+<p>Your choice: @ViewBag.PlayerChoice</p>
+<p>Computer's choice: @ViewBag.ComputerChoice</p>
+<p>Result: @ViewBag.Result</p>
+<p>Player Score: <span id="playerScore">@ViewBag.PlayerScore</span></p>
+<p>Computer Score: <span id="computerScore">@ViewBag.ComputerScore</span></p>
+
+@Html.ActionLink("Play again", "Index", "Game")

@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Play Rock Paper Scissors";
+}
+
+<h2>Play Rock Paper Scissors</h2>
+
+@using (Html.BeginForm("Play", "Game", FormMethod.Post))
+{
+        <div class="form-group">
+            <label for="userChoice">Select your choice:</label>
+            <select name="userChoice" id="userChoice" class="form-select">
+                    <option value="rock">Rock ✊</option>
+                    <option value="paper">Paper 📄</option>
+                    <option value="scissors">Scissor ✂️</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Play</button>
+}
+
+<p>Player Score: <span id="playerScore">@ViewBag.PlayerScore</span></p>
+<p>Computer Score: <span id="computerScore">@ViewBag.ComputerScore</span></p>
